@@ -1,0 +1,9 @@
+git_username: foobar
+git_password: FOOBAR
+frontent_root: $HOME/github/abc
+frontend_repo: github.com/forbar/abc
+frontend_branch: master
+backend_root: $HOME/github/abcd
+backend_repo: github.com/foobar/abcd
+backend_branch: master
+

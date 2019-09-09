@@ -1,0 +1,7 @@
+---
+- hosts: expression-webservers
+  tasks:
+  - name: get service status
+    shell: supervisorctl status
+
+

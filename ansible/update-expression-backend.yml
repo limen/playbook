@@ -1,0 +1,10 @@
+---
+- hosts: expression-webservers
+  tasks:
+    - name: update backend code
+      shell: git -C {{ backend_root  }} pull https://{{ git_username }}:{{ git_password }}@{{ backend_repo }} {{ backend_branch }}
+      notify:
+        - restart backend
+  handlers:
+    - name: restart backend
+      shell: 'supervisorctl restart expression-backend:'
