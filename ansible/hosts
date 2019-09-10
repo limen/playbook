@@ -1,3 +1,12 @@
+aliyun-outing ansible_host=47.74.231.39
+desktop-ubuntu ansible_host=localhost
+
+[expression-webservers]
+aliyun-outing
+
+[expression-local]
+desktop-ubuntu
+
 # This is the default ansible 'hosts' file.
 #
 # It should live in /etc/ansible/hosts

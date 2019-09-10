@@ -1,5 +1,6 @@
 ---
-- hosts: expression-webservers
+- hosts: "{{ hosts }}"
+  remote_user: "{{ remote_user }}"
   tasks:
     - name: update frontend code
       shell: git -C {{ frontend_root }} pull https://{{ git_username }}:{{ git_password }}@{{ frontend_repo }} {{ frontend_branch }}
