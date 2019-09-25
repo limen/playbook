@@ -3,5 +3,5 @@
   remote_user: "{{ remote_user }}"
   tasks:
   - name: update database
-    shell: gomigrate -database postgres://{{username}}:{{password}}@localhost:5432/golf?sslmode=disable -path $HOME/go/src/github.com/limen/fargo/migrations up
+    shell: gomigrate -database postgres://{{db_username}}:{{db_password}}@localhost:5432/golf?sslmode=disable -path $HOME/go/src/github.com/limen/fargo/migrations up
 

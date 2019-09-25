@@ -2,6 +2,8 @@ hosts: local
 remote_user: foo
 git_username: foobar
 git_password: FOOBAR
+db_username: admin
+db_password: Admin
 frontent_root: $HOME/github/abc
 frontend_repo: github.com/forbar/abc
 frontend_branch: master
